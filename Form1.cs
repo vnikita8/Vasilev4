@@ -136,10 +136,21 @@ namespace Vasilev4
                         x2 = (-per_b - Math.Sqrt(D)) / (2 * per_a);
                         labelX1.Text += x1.ToString();
                         labelX2.Text += x2.ToString();
-                        for (double i = (double)MinX.Value; i < (double)MaxX.Value; i += 0.001)
+                        if (Math.Abs(MinX.Value)+Math.Abs(MaxX.Value) < 100)
                         {
-                            list.Add(i, y(i, per_b, per_c, per_a));
+                            for (double i = (double)MinX.Value; i < (double)MaxX.Value; i += 0.001)
+                            {
+                                list.Add(i, y(i, per_b, per_c, per_a));
+                            }
                         }
+                        else
+                        {
+                            for (double i = (double)MinX.Value; i < (double)MaxX.Value; i += 0.1)
+                            {
+                                list.Add(i, y(i, per_b, per_c, per_a));
+                            }
+                        }
+                        
                         graphcount++;
                         pane.AddCurve(graphcount.ToString(), list, Color.DarkBlue, SymbolType.None);
                         graph1.AxisChange();

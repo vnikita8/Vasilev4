@@ -387,12 +387,12 @@ namespace Vasilev4
             // 
             this.MaxY.Location = new System.Drawing.Point(162, 53);
             this.MaxY.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.MaxY.Minimum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             -2147483648});
@@ -409,12 +409,12 @@ namespace Vasilev4
             // 
             this.MaxX.Location = new System.Drawing.Point(162, 17);
             this.MaxX.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.MaxX.Minimum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             -2147483648});
@@ -431,12 +431,12 @@ namespace Vasilev4
             // 
             this.MinY.Location = new System.Drawing.Point(51, 53);
             this.MinY.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.MinY.Minimum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             -2147483648});
@@ -453,12 +453,12 @@ namespace Vasilev4
             // 
             this.MinX.Location = new System.Drawing.Point(51, 17);
             this.MinX.Maximum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             0});
             this.MinX.Minimum = new decimal(new int[] {
-            1000,
+            100000,
             0,
             0,
             -2147483648});
